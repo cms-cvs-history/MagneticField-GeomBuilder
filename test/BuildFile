@@ -1,0 +1,13 @@
+
+<use name=DetectorDescription/Parser>
+
+<library file=stubs/*.cc name=testGeomBuilder>
+<use name=MagneticField/GeomBuilder>
+</library>
+
+<bin file=testFindVolume.cpp>
+ <lib name=testGeomBuilder>
+ <use name=MagneticField/GeomBuilder>
+ <use name=Utilities/Timing>
+ <use name=FWCore/ParameterSet>
+</bin>
