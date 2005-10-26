@@ -1,0 +1,14 @@
+process MAGNETICFIELDTEST = {
+
+	path p = {MagneticFieldAnalyser}
+	
+	
+	source = EmptySource {untracked int32 maxEvents = 5}
+	es_source = XMLIdealGeometryESSource {
+	  string GeometryConfiguration = "TESTconfiguration.xml"	  
+	}
+	es_module = VolumeBasedMagneticFieldESProducer {}	
+	module MagneticFieldAnalyser = MagneticFieldAnalyser {}
+
+
+}
