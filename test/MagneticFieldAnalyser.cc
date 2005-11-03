@@ -12,7 +12,7 @@
 
 #include "FWCore/ParameterSet/interface/ParameterSet.h"
 
-#include "MagneticField/VolumeBasedEngine/interface/VolumeBasedMagneticField.h"
+#include "MagneticField/Engine/interface/MagneticField.h"
 #include "MagneticField/Records/interface/IdealMagneticFieldRecord.h"
 
 #include "FWCore/Framework/interface/ESHandle.h"
@@ -60,7 +60,7 @@ void
 MagneticFieldAnalyser::analyze(const edm::Event& /*iEvent*/, const edm::EventSetup& iSetup)
 {
    using namespace edm;
-   ESHandle<VolumeBasedMagneticField> pSetup;
+   ESHandle<MagneticField> pSetup;
    iSetup.get<IdealMagneticFieldRecord>().get(pSetup);
    const GlobalPoint g(0.,0.,0.);
    std::cout << "B-field(T) at (0,0,0)(cm): " << pSetup->inTesla(g) << std::endl;
