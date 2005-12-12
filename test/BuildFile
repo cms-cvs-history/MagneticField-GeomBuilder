@@ -1,11 +1,11 @@
-  <use name=boost>
-  <use name=clhep>
-  <use name=FWCore/Integration>
-  <use name=MagneticField/Records>
-  <use name=MagneticField/GeomBuilder>
-  <use name=MagneticField/VolumeBasedEngine>
 
-  <library file="MagneticFieldAnalyser.cc" name=MagneticFieldAnalyser>
-   <flags SEAL_PLUGIN_NAME="MagneticFieldAnalyser">
-  </library>
- 
+<use name=DetectorDescription/Parser>
+<use name=MagneticField/GeomBuilder>
+<use name=MagneticField/VolumeBasedEngine>
+
+<library file=stubs/*.cc name=testMagneticFieldGeomBuilder>
+</library>
+
+<bin file=testFindVolume.cpp>
+ <lib name=testMagneticFieldGeomBuilder>
+</bin>
