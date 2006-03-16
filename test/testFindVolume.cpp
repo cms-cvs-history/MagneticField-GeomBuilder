@@ -45,11 +45,11 @@ int main() {
 
   edm::ParameterSet p;
   p.addParameter<double>("findVolumeTolerance", 0.0);
-  p.addParameter<bool>("cacheLastVolume", true);
+  p.addUntrackedParameter<bool>("cacheLastVolume", true);
   p.addUntrackedParameter<bool>("timerOn", true);
   
   // hack: set verbosity
-  bldVerb::debugOut = false;
+  bldVerb::debugOut = true;
 
   // Create the field geometry
   MagGeoBuilderFromDDD builder;
