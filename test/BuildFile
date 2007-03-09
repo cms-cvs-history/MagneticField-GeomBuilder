@@ -1,11 +1,18 @@
 
-<use name=DetectorDescription/Parser>
-<use name=MagneticField/GeomBuilder>
-<use name=MagneticField/VolumeBasedEngine>
-
 <library file=stubs/*.cc name=testMagneticFieldGeomBuilder>
+  <use name=boost>
+  <use name=clhep>
+  <use name=MagneticField/Engine>
+  <use name=MagneticField/Records>
+  <use name=MagneticField/GeomBuilder>
+  <use name=MagneticField/VolumeBasedEngine>
+  <flags SEAL_PLUGIN_NAME="testMagneticFieldGeomBuilder">
 </library>
 
-<bin file=testFindVolume.cpp>
- <lib name=testMagneticFieldGeomBuilder>
-</bin>
+# Standalone test is not working properly...
+#<bin file=testFindVolume.cpp>
+# <use name=DetectorDescription/Parser>
+# <use name=MagneticField/GeomBuilder>
+# <use name=MagneticField/VolumeBasedEngine>
+# <lib name=testMagneticFieldGeomBuilder>
+#</bin>
