@@ -6,7 +6,7 @@
   <use name=MagneticField/Records>
   <use name=MagneticField/GeomBuilder>
   <use name=MagneticField/VolumeBasedEngine>
-  <flags SEAL_PLUGIN_NAME="testMagneticFieldGeomBuilder">
+  <flags EDM_PLUGIN=1>
 </library>
 
 # Standalone test is not working properly...
