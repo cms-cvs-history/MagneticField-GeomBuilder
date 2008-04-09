@@ -1,0 +1,10 @@
+es_source magfield = XMLIdealGeometryESSource 
+{
+   vstring geomXMLFiles = {
+      "Geometry/CMSCommonData/data/normal/cmsextent.xml",
+      "Geometry/CMSCommonData/data/cms.xml",
+      "Geometry/CMSCommonData/data/cmsMagneticField.xml",
+      "MagneticField/GeomBuilder/data/MagneticFieldVolumes_1103l.xml"
+   }
+   string rootNodeName="cmsMagneticField:MAGF"
+}
