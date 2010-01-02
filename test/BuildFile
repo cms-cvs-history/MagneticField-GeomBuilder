@@ -5,6 +5,7 @@
   <use name=MagneticField/Records>
   <use name=MagneticField/Interpolation>
   <use name=MagneticField/VolumeBasedEngine>
+  <use name=Utilities/Timing>
   <flags EDM_PLUGIN=1>
 #  <Flags CXXFLAGS="-O0 -g -DDEBUG">
 </library>
