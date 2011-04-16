@@ -1,17 +1,11 @@
 /** \file
  *
- *  $Date: 2009/03/19 10:51:40 $
- *  $Revision: 1.5 $
+ *  $Date: 2011/04/16 09:58:21 $
+ *  $Revision: 1.7 $
  *  \author Nicola Amapane 11/08
  */
 
 #include "MagneticField/GeomBuilder/plugins/AutoMagneticFieldESProducer.h"
-
-#include "MagneticField/VolumeBasedEngine/interface/VolumeBasedMagneticField.h"
-#include "MagneticField/UniformEngine/src/UniformMagneticField.h"
-#include "MagneticField/ParametrizedEngine/src/OAEParametrizedMagneticField.h"
-#include "MagneticField/ParametrizedEngine/src/OAE85lParametrizedMagneticField.h"
-#include "MagneticField/ParametrizedEngine/src/PolyFit2DParametrizedMagneticField.h"
 
 #include "MagneticField/GeomBuilder/src/MagGeoBuilderFromDDD.h"
 
